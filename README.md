@@ -346,7 +346,6 @@ make[1]: *** [lib/CMakeFiles/qkd.dir/all] Error 2
 Makefile:162: recipe for target 'all' failed
 make: *** [all] Error 2
 
-
 '''
 
 
