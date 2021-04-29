@@ -318,7 +318,7 @@ Oliver Maurhart
 [https://git-service.ait.ac.at/quantum-cryptography/qkd](http://git-service.ait.ac.at/quantum-cryptography/qkd)
 
 #Install errors
-'''
+----------
 In file included from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random.cpp:39:0:
 /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random_cbc_aes.h:124:20: error: field ‘m_cCipherContext’ has incomplete type ‘EVP_CIPHER_CTX {aka evp_cipher_ctx_st}’
      EVP_CIPHER_CTX m_cCipherContext;
