@@ -317,3 +317,36 @@ Oliver Maurhart
 [https://sqt.ait.ac.at/software](https://sqt.ait.ac.at/software)  
 [https://git-service.ait.ac.at/quantum-cryptography/qkd](http://git-service.ait.ac.at/quantum-cryptography/qkd)
 
+#Install errors
+'''
+In file included from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random.cpp:39:0:
+/home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random_cbc_aes.h:124:20: error: field ‘m_cCipherContext’ has incomplete type ‘EVP_CIPHER_CTX {aka evp_cipher_ctx_st}’
+     EVP_CIPHER_CTX m_cCipherContext;
+                    ^~~~~~~~~~~~~~~~
+In file included from /usr/include/openssl/x509.h:15:0,
+                 from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random_cbc_aes.h:42,
+                 from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random.cpp:39:
+/usr/include/openssl/ossl_typ.h:90:16: note: forward declaration of ‘EVP_CIPHER_CTX {aka struct evp_cipher_ctx_st}’
+ typedef struct evp_cipher_ctx_st EVP_CIPHER_CTX;
+                ^~~~~~~~~~~~~~~~~
+In file included from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random.cpp:41:0:
+/home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random_hmac_sha.h:130:16: error: field ‘m_cMessageDigestContext’ has incomplete type ‘EVP_MD_CTX {aka evp_md_ctx_st}’
+     EVP_MD_CTX m_cMessageDigestContext;
+                ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/openssl/x509.h:15:0,
+                 from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random_cbc_aes.h:42,
+                 from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random.cpp:39:
+/usr/include/openssl/ossl_typ.h:92:16: note: forward declaration of ‘EVP_MD_CTX {aka struct evp_md_ctx_st}’
+ typedef struct evp_md_ctx_st EVP_MD_CTX;
+                ^~~~~~~~~~~~~
+lib/CMakeFiles/qkd.dir/build.make:1249: recipe for target 'lib/CMakeFiles/qkd.dir/utility/random/random.cpp.o' failed
+make[2]: *** [lib/CMakeFiles/qkd.dir/utility/random/random.cpp.o] Error 1
+CMakeFiles/Makefile2:154: recipe for target 'lib/CMakeFiles/qkd.dir/all' failed
+make[1]: *** [lib/CMakeFiles/qkd.dir/all] Error 2
+Makefile:162: recipe for target 'all' failed
+make: *** [all] Error 2
+
+
+'''
+
+
