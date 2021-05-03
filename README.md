@@ -319,6 +319,7 @@ Oliver Maurhart
 
 #Install errors
 ----------
+```
 In file included from /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random.cpp:39:0:
 /home/hl001/Desktop/QKD/ait-qkd/lib/utility/random/random_cbc_aes.h:124:20: error: field ‘m_cCipherContext’ has incomplete type ‘EVP_CIPHER_CTX {aka evp_cipher_ctx_st}’
      EVP_CIPHER_CTX m_cCipherContext;
@@ -346,6 +347,6 @@ make[1]: *** [lib/CMakeFiles/qkd.dir/all] Error 2
 Makefile:162: recipe for target 'all' failed
 make: *** [all] Error 2
 
-'''
+```
 
 
